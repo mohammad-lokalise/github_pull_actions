@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="array_of_strings">
+    <item></item>
+    <item></item>
+    <item></item>
+  </string-array>
+  <string-array name="planetsTitle">
+    <item></item>
+    <item></item>
+  </string-array>
+  <plurals name="plural_string">
+    <item quantity="one"></item>
+    <item quantity="other"></item>
+  </plurals>
+  <string name="simple_string">¡Hola Mundo!</string>
+  <string name="string_w" formatted="false">%s trabajos en %s días</string>
+  <string name="string_with_html_formatting">¡Hola <b> mundo </b>!</string>
+  <string name="string_with_other_html"></string>
+  <string name="string_with_placeholders">Hola %s!</string>
+</resources>
