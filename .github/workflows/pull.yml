@@ -1,0 +1,25 @@
+name: Pull from Lokalise
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull from Lokalise
+        uses: lokalise/lokalise-pull-action@v3.9.0
+        with:
+          api_token: ${{ secrets.LOKALISE_API_TOKEN }}
+          project_id: ${{ secrets.LOKALISE_PROJECT_ID }} 
+          translations_path: |
+            g11n/data/src/main/res/values-b+%LANG_ISO%/strings.xml
+          base_lang: en
+          file_format: xml
+          ilter_langs: es_419
