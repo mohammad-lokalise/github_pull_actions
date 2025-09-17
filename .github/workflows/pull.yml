@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -19,7 +19,7 @@ jobs:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
           project_id: ${{ secrets.LOKALISE_PROJECT_ID }} 
           translations_path: |
-            %LANG_ISO%.xml
+            locales
           base_lang: en
           flat_naming: true
           file_format: xml
