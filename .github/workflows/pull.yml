@@ -22,4 +22,3 @@ jobs:
             g11n/data/src/main/res/values-b+%LANG_ISO%/strings.xml
           base_lang: en
           file_format: xml
-          filter_langs: es_419
