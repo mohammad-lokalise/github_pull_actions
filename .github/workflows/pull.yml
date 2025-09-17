@@ -19,6 +19,7 @@ jobs:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
           project_id: ${{ secrets.LOKALISE_PROJECT_ID }} 
           translations_path: |
-            locales/%LANG_ISO%/%LANG_ISO%.xml
+            %LANG_ISO%.xml
           base_lang: en
+          flat_naming: true
           file_format: xml
