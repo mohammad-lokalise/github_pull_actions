@@ -22,4 +22,4 @@ jobs:
             locales
           base_lang: en
           flat_naming: true
-          file_format: xml
+          file_format: json
