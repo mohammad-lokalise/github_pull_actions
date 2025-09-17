@@ -19,6 +19,6 @@ jobs:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
           project_id: ${{ secrets.LOKALISE_PROJECT_ID }} 
           translations_path: |
-            g11n/data/src/main/res/values-b+%LANG_ISO%/strings.xml
+            g11n/data/src/main/res/values/%LANG_ISO%.xml
           base_lang: en
           file_format: xml
