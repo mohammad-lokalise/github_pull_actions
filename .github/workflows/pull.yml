@@ -17,19 +17,18 @@ jobs:
         uses: lokalise/lokalise-pull-action@v4.0.0
         with:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
-          project_id: ${{ vars.LOKALISE_PROJECT_ID }} 
+          project_id: ${{ vars.LOKALISE_PROJECT_ID }}
           file_format: json
           base_lang: en
           skip_include_tags: true
-          translations_path: |
-            locales
+          translations_path: locales
           additional_params: |
-            --format=json
-            --original-filenames=false
-            --bundle-structure=locales/%LANG_IS0%.json
+            {
+              "format": "json",
+              "original-filenames": false,
+              "bundle-structure": "locales/%LANG_ISO%.json"
+            }
           always_pull_base: true
           git_commit_message: 'Update translations'
           pr_title: 'Update translations from Lokalise'
-          pr_body: 'This .PR. updates .translations .from .Lokalise'
-
-        
+          pr_body: 'This PR updates translations from Lokalise'
