@@ -24,9 +24,9 @@ jobs:
           translations_path: |
             locales
           additional_params:
-            -- format=json
-            -- original-filenames=false
-            -- bundle-structure=locales/%LANG_IS0%.json
+            --format=json
+            --original-filenames=false
+            --bundle-structure=locales/%LANG_IS0%.json
           always_pull_base: true
           git_commit_message: 'Update translations'
           pr_title: 'Update translations from Lokalise'
