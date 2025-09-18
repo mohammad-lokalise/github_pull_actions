@@ -23,7 +23,7 @@ jobs:
           skip_include_tags: true
           translations_path: |
             locales
-          additional_params:
+          additional_params: |
             --format=json
             --original-filenames=false
             --bundle-structure=locales/%LANG_IS0%.json
