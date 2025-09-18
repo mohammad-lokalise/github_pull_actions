@@ -23,3 +23,8 @@ jobs:
           base_lang: en
           flat_naming: true
           file_format: json
+          always_pull_base: true
+          git_commit_message: 'Update translations'
+          pr_title: 'Update translations from Lokalise'
+          pr_body: 'This .PR. updates .translations .from .Lokalise'
+        
